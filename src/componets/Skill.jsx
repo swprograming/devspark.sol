@@ -14,7 +14,6 @@ const skillsData = [
     skills: [
       { name: "Figma", level: 90 },
       { name: "Adobe XD", level: 80 },
-      { name: "Wireframing", level: 85 },
     ],
   },
   {
@@ -48,8 +47,7 @@ const skillsData = [
     icon: <FaUsers className="text-3xl mb-4 text-blue-500" />,
     skills: [
       { name: "Problem Solving", level: 95 },
-      { name: "Communication", level: 85 },
-      { name: "Teamwork", level: 90 },
+      { name: "Communication", level: 70 },
     ],
   },
 ];
