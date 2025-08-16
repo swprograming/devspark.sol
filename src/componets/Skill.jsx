@@ -25,7 +25,7 @@ const skillsData = [
     icon: <FaServer className="text-3xl mb-4 text-[#A2D729]" />,
     skills: [
       { name: "Node.js", level: 80 },
-      { name: "Express.js", level: 75 },
+      { name: "Python", level: 85 },
       { name: "MongoDB", level: 70 },
     ],
   },
