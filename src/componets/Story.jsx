@@ -17,19 +17,19 @@ const Story = () => {
 
         {/* Text  */}
         <div className="flex-1">
-          <h2 className="text-5xl font-bold mb-6">My Story</h2>
+          <h2 className="text-5xl font-bold mb-6 text-blue-500">My Story</h2>
           <p className="text-lg leading-8 text-gray-700">
             My name is <span className="font-semibold">Solomon Wondwesen</span>,
             a highly motivated and passionate creative developer based in Addis
             Ababa. I started my journey in tech at a young age, building small
             websites and experimenting with different tools. Over time my
-            curiosity grew into a strong passion for <span className="text-[#A2D729] font-semibold">design</span> and{" "}
-            <span className="text-[#A2D729] font-semibold">full-stack
+            curiosity grew into a strong passion for <span className="text-blue-500 font-semibold">design</span> and{" "}
+            <span className="text-blue-500 font-semibold">full-stack
             development</span>.
           </p>
           <p className="text-lg leading-8 text-gray-700 mt-4">
             Aside from coding, I also enjoy working on{" "}
-            <span className="text-[#A2D729] font-semibold">video and photo
+            <span className="text-blue-500 font-semibold">video and photo
             editing</span>, where I get to explore my creative side. My goal is
             to build products that are not only functional, but also meaningful
             and visually engaging.
