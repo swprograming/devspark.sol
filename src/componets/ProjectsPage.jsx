@@ -21,42 +21,30 @@ const projects = [
     image: plantai,
     link: "#",
   },
-  {
-    title: "School Managment System",
-    description: "A modern School Management System built with React & TailwindCSS. And Backend with MongoDB",
-    image: "/assets/project1.png",
-    link: "#",
-  },
 ];
 
-const Projects = () => {
+const ProjectsPage = () => {
   return (
-    <section className="w-full py-20 px-8 bg-gray-50">
+    <div className="w-full min-h-screen bg-gray-50 py-20 px-6">
       <div className="max-w-[1197px] mx-auto">
-        <h2 className="text-4xl md:text-6xl font-bold mb-12 text-center text-blue-500">
-          Projects
-        </h2>
+        {/* Page title */}
+        <h1 className="text-5xl font-bold mb-12">Projects</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Scrollable Vertical List */}
+        <div className="flex flex-col gap-12">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden 
-                         transition-transform duration-300 
-                         hover:scale-105 md:hover:scale-105 hover:scale-100"
+              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-56 object-cover"
+                className="w-full h-[450px] object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-gray-700 mb-4 text-sm md:text-base">
-                  {project.description}
-                </p>
+                <h3 className="text-3xl font-bold mb-2">{project.title}</h3>
+                <p className="text-gray-600 mb-4 text-lg">{project.description}</p>
                 <a
                   href={project.link}
                   className="text-blue-500 font-semibold hover:underline"
@@ -68,8 +56,8 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Projects;
+export default ProjectsPage;
