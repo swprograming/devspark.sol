@@ -1,5 +1,11 @@
 import React from "react";
-import { FaPaintBrush, FaCode, FaServer, FaUsers } from "react-icons/fa";
+import {
+  FaPaintBrush,
+  FaCode,
+  FaServer,
+  FaUsers,
+  FaCameraRetro,
+} from "react-icons/fa";
 
 const skillsData = [
   {
@@ -30,6 +36,14 @@ const skillsData = [
     ],
   },
   {
+    category: "Creative Skills",
+    icon: <FaCameraRetro className="text-3xl mb-4 text-[#A2D729]" />,
+    skills: [
+      { name: "Video Editing", level: 85 },
+      { name: "Photo Editing", level: 90 },
+    ],
+  },
+  {
     category: "Soft Skills",
     icon: <FaUsers className="text-3xl mb-4 text-[#A2D729]" />,
     skills: [
@@ -55,6 +69,7 @@ const Skills = () => {
               <div className="flex flex-col items-center">
                 {category.icon}
                 <h3 className="text-2xl font-bold mb-6">{category.category}</h3>
+
                 <div className="space-y-5 w-full">
                   {category.skills.map((skill, idx) => (
                     <div key={idx}>
